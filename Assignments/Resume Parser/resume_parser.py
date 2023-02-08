@@ -40,7 +40,7 @@ def unique_skills_and_education(doc):
     
     # Convert from set to list type
     education_list = list(set(education))
-    # Reverse list to dispaly education in order
+    # Reverse list to display education in order
     education_list.reverse()
     return set(skills), education_list
 
