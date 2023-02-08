@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Resume Parser</title>
+{% endblock %}
+
+{% block content %}
+<div>
+    <h1 id="homepage-header">Resume Parser <i class="bi bi-person-vcard-fill"></i></h1>
+</div>
+
+<div id="homepage-intro">
+    <h4>Why use?</h4>
+    <p>
+        Companies will be using software to filter out candidates based on
+        extracted information (like skills and education). So you want to make
+        sure your resume can be easily parsed for important credentials. Use this
+        tool to find out how easily your resume can be parsed. Currently the tool
+        parses for education and skills. In future work, more fields will be added.
+    </p>
+</div>
+
+<div id="homepage-form">
+    <h3>Upload Resume</h3>
+    <form action="/uploadResume" method="POST" enctype="multipart/form-data">
+        <input type="file" id="File" name="File" accept=".pdf">
+        <button type="submit" class="btn btn-secondary">Parse</button>
+    </form>
+    <p><b>Note:</b> upload accepted in pdf format only</p>
+</div>
+{% endblock %}
