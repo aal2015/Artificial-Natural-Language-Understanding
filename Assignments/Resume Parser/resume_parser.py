@@ -37,8 +37,12 @@ def unique_skills_and_education(doc):
             skills.append(ent.text)
         elif ent.label_ == 'EDUCATION':
             education.append(ent.text)
-            
-    return set(skills), list(set(education))
+    
+    # Convert from set to list type
+    education_list = list(set(education))
+    # Reverse list to dispaly education in order
+    education_list.reverse()
+    return set(skills), education_list
 
 # Main function to start parsing resume <---------------------
 def extract_skills_education(filePath):
