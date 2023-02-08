@@ -23,10 +23,21 @@ Data related to skills and education was collected. For the skills dataset, a da
 For education data, data from this link, https://thebestschools.org/degrees/college-degree-levels/ was taken. Data from Ati Chetsurakul hosting in the 
 GitHub link, https://github.com/AtiChetsurakul/NLP_labsession/tree/main/Hw3m was also used.
 
-# References
+## References
 Flask tutorial
 - https://www.youtube.com/watch?v=Z1RJmh_OqeA&t=1670s
 
 Uploading files in Flask app
 - https://www.youtube.com/watch?v=GeiUTkSAJPs&t=463s
 - https://flask.palletsprojects.com/en/2.2.x/patterns/fileuploads/
+
+
+# Demo of the Running Application
+#### Home Page
+![Home Page](https://user-images.githubusercontent.com/28766535/217636557-ca806336-5af8-4baa-85e3-1f8945b09a94.png)
+
+#### Uploading Resume
+![Uploading Resume ](https://user-images.githubusercontent.com/28766535/217636892-c518c628-0cee-4eac-b825-3be33f819658.png)
+
+#### Result Page of Parsed Resume 
+![Result Page after parsing Resume](https://user-images.githubusercontent.com/28766535/217636972-a1afda82-8f41-4d58-b33c-769fe1723769.png)
