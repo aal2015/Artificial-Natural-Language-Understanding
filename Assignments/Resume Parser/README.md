@@ -1,7 +1,7 @@
 # Resume Parser
 ## How to run
 - pip install -r requirements.txt
-- python3 app.py 
+- python3 app.py  <br /><br />
 Running inside vitual environment (https://github.com/jakerieger/FlaskIntroduction)
 - pip install virtualenv
 - virtualenv env
