@@ -4,4 +4,6 @@
 | Solution | Incorporate document-level context |
 | Contributions | <ol><li>Propose document-level GEC systems</li> <li>Employ three-step training strategy</li> <li>Compare with NMT-based models for document-level context evalutation</li></ol> |
 | Model | Sentence level (baseline): encoder-decoder transformer </br> Document-context level: (1) Single Encoder Model, (2) Multi-encoder encoder side, (3) Multi-encoder decoder side |
-| Single Encoder Model | Same architecture as the baseline model for sentence level. However, the difference is that this model considers context by concatenating previous sentence(s) to current sentence.
+| Single-encoder Model | Same architecture as the baseline model for sentence level. However, the difference is that this model considers context by concatenating previous sentence(s) to current sentence.
+| Multi-encoder Models | Has an extra encoder to process the current sentence and its context separately. The resulting context from two encoders can be integrated in the encoder side and decoder side hence leading to two models based on this. |
+| Dataset | Train dataset <ol><li>Cambridge English Write and Improve (W&I)</li> <li>First Certificate in English (FCE)</li> <li>National University of Singapore Corpus of Learner English (NUCLE)</li> <li>Cambridge Learner Corpus (CLC)</li></ol> Develoment dataset <ol><li>FCE-dev</li></ol> Test dataset <ol><li>FCE-test</li> <li>BEA-dev</li> <li>CoNLL-2014 test set</li></ol>
