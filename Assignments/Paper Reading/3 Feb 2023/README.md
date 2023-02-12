@@ -12,4 +12,7 @@
 | | Document-level context models gives better results than baseline model at sentence-level |
 | | Multi-encoder on decoder side integration performs better than multi-encoder on encoder side integration for FCE-test and CoNLL-2014. However, both multi-encoder gave similar results on BEA-dev |
 | | Found using three-step training crucial for training models. Dropping either pretraining or fine-tuning steps in the ablation study showed a drop in performance. |
-| | Found incorporating one previous sentence to the current sentence for dataset FCE-test and BEA-dev and one for CoNLL-2014 to give the best performance for including context. This may be due to CoNLL-2014 containing twice as many sentences on average. Overall, long-distance context had limited impact on GEC |
+| | Found incorporating one previous sentence to the current sentence for dataset FCE-test and BEA-dev and one for CoNLL-2014 to give the best performance for including context. This may be due to CoNLL-2014 containing twice as many sentences on average. Overall, the long-distance context had a limited impact on GEC. |
+| | Displayed biggest improve for subject-verb agreement, preposition, noun number, determiner and pronoun errors. |
+| | Multi-encoder model on decoder integration outperforms NMT-based document-level context models by large margins. |
+| | Achieves state of the art on FCE-test. |
