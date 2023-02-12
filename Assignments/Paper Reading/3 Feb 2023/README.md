@@ -1,9 +1,14 @@
+![Screenshot 2023-02-12 152834](https://user-images.githubusercontent.com/28766535/218300717-45b378c6-d392-41fe-97f8-e7a66c4deb7f.png)
+
+
+
 | Topic  | Document-level Grammar Error Correction | 
 | ------------- | ------------- |
+| Paper Link | https://aclanthology.org/2021.bea-1.8/ |
 | Issue | Currently, all GEC systems process each sentence independently. However, document-level context may be needed to correct certain errors (e.g. present or past tense). Also, processing at the sentence level may lead to inconsistent modifications throughout whole document. |
 | Solution | Incorporate document-level context |
 | Contributions | <ol><li>Propose document-level GEC systems</li> <li>Employ three-step training strategy</li> <li>Compare with NMT-based models for document-level context evalutation</li></ol> |
-| Model | Sentence level (baseline): encoder-decoder transformer </br> Document-context level: (1) Single Encoder Model, (2) Multi-encoder encoder side, (3) Multi-encoder decoder side |
+| Model | Sentence level (baseline): encoder-decoder transformer <b>(Figure 1a)</b> </br> Document-context level: (1) Single Encoder Model <b>(Figure 1a)</b>, (2) Multi-encoder encoder side <b>(Figure 1b)</b>, (3) Multi-encoder decoder side <b>(Figure 1c)</b> |
 | Single-encoder Model | Same architecture as the baseline model for sentence level. However, the difference is that this model considers context by concatenating previous sentence(s) to current sentence.
 | Multi-encoder Models | Has an extra encoder to process the current sentence and its context separately. The resulting context from two encoders can be integrated in the encoder side and decoder side hence leading to two models based on this. |
 | Dataset | Train dataset <ol><li>Cambridge English Write and Improve (W&I)</li> <li>First Certificate in English (FCE)</li> <li>National University of Singapore Corpus of Learner English (NUCLE)</li> <li>Cambridge Learner Corpus (CLC)</li></ol> Develoment dataset <ol><li>FCE-dev</li></ol> Test dataset <ol><li>FCE-test</li> <li>BEA-dev</li> <li>CoNLL-2014 test set</li></ol>
