@@ -4,6 +4,7 @@
 - python app.py
 - pip install -U spacy
 - python -m spacy download en_core_web_md
+- python app.py
 
 ## About Project
 A web application using Flask was used to do sentiment analysis on Reddit posts. Originally, the intend was to do analysis on Twitter posts but due to permission issues, Reddit was selected instead.  To do sentiment analysis, a module was trained using 'Stanford Sentiment Treebank'. It is explored in 'Sentiment Analysis Abhinav.ipynb' file. In that file, double negation and negative positive sentence test was also performed to test the model. 'reddit_sentiment_analysis.ipynb' file shows the sample working of the model on doing sentiment analysis on Reddit posts on a certain Subreddit.
