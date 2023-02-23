@@ -19,3 +19,4 @@ It is important to run Flask server on port 5000 due to the proxy setting in pac
 - https://stackoverflow.com/questions/62166362/how-to-tokenize-python-code-using-the-tokenize-module - Tokenizing Python code
 - https://www.youtube.com/watch?v=7LNl2JlZKHA - Creating Flask - React Project
 - https://dev.to/ondiek/sending-data-from-react-to-flask-apm - For sending data from React to Flask.
+- https://stackoverflow.com/questions/61245215/saving-vocabulary-object-from-pytorchs-torchtext-library - Saving torch object
