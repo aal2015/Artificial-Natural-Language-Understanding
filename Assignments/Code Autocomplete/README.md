@@ -1,6 +1,6 @@
 # Code Autocomplete
 ## About Project
-A web app was created for suggesting code completion primarily for Pytorch code.
+A web app was created for suggesting code completions primarily for Pytorch code. This was done so by training a model to do code generation on the given Python code. This is explored in 'auto complete Abhinav.ipynb' file. File, 'backup_test.ipynb' contains the code used in Flask, especially in 'autocomplete.py', for suggesting code to complete the current Python code.
 
 ## Technologies used for Web App
 <b>Frontend</b>
@@ -13,7 +13,7 @@ A web app was created for suggesting code completion primarily for Pytorch code.
 'codeparrot-clean' dataset from CodeParrot organization was used to train the model. The dataset was meant to train models for code generation. Since the main emphasis is given to Pytorch code generation, all first 1000 repo suspected to contain Pytorch code were extracted for model training.
 
 ## Note
-It is important to run Flask server on port 5000 due to proxy setting in package.json in React.
+It is important to run Flask server on port 5000 due to the proxy setting in package.json in React.
 
 ## References
 - https://stackoverflow.com/questions/62166362/how-to-tokenize-python-code-using-the-tokenize-module - Tokenizing Python code
