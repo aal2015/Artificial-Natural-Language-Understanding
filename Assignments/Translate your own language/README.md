@@ -2,7 +2,7 @@
 
 ## About Project
 A model was trained to translate Hindi text to English text. 'IITB-English-Hindi Parallel Corpus' was the dataset used for training the model. 
-More information about the data can be found at https://huggingface.co/datasets/cfilt/iitb-english-hindi.
+More information about the data can be found at https://huggingface.co/datasets/cfilt/iitb-english-hindi. The model training is done in 'Translate your own language Abhinav.ipynb' file. 'backend_test.ipynb' file illustrates the logic to translate from Hindi text to English text during inference for adding it in the backend.
 
 ## Tech Stack
 - Frontend - Reach
