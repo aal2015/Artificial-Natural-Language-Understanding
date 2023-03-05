@@ -32,7 +32,7 @@ Note: Please uncomment 'stanza.download('hi')' in line 189 in the translate.py f
 ### Home Page
 ![homepage](https://user-images.githubusercontent.com/28766535/222973398-429a4d0d-61af-4b1a-90d0-d19512aaace1.png)
 
-## Translation from Hindi text to English text
+### Translation from Hindi text to English text
 ![result](https://user-images.githubusercontent.com/28766535/222973464-ba85d874-f9cd-4acb-ac09-8e0cd65080bb.png)
 
 Intended Translation: How are you?
