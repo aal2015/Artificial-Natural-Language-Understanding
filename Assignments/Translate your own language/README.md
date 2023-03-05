@@ -36,3 +36,7 @@ Note: Please uncomment 'stanza.download('hi')' in line 189 in the translate.py f
 ![result](https://user-images.githubusercontent.com/28766535/222973464-ba85d874-f9cd-4acb-ac09-8e0cd65080bb.png)
 
 Intended Translation: How are you?
+
+## Future Work
+Currently, the model is not giving good translations. For the future work, a more powerful model (e.g. transformer) and better preprocessing of data will be 
+considered for future work.
