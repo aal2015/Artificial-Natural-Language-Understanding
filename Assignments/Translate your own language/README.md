@@ -20,6 +20,7 @@ More information about the data can be found at https://huggingface.co/datasets/
 
 ## How to run
 #### Running Flask
+Note: Please uncomment 'stanza.download('hi')' in line 189 in the translate.py file in the backend when running for the first time. This will download necessary a model for Hindi text for tokenization.
 - cd backend/
 - python3 app.py
 
