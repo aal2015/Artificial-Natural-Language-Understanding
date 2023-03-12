@@ -1,6 +1,6 @@
 # Code Autocomplete
 ## About Project
-A web app was created for suggesting code completions primarily for Pytorch code. This was done so by training a model to do code generation on the given Python code. This is explored in 'auto complete Abhinav.ipynb' file. File, 'backup_test.ipynb' contains the code used in Flask, especially in 'autocomplete.py', for suggesting code to complete the current Python code. Currently, the model is not giving good suggestions for code completion suggesting that better training, model, and/or dataset processing need to be done to get good code completion suggestions.
+This project is based on the 'Code Autocomplete' Project, https://github.com/aal2015/Natural-Language-Understanding/tree/main/Assignments/Code%20Autocomplete. Instead of using LSTM, the decoder part of the transformer was used.. This is explored in 'Improved Language Modeling - Abhinav.ipynb' file. File, 'backup_test.ipynb' contains the code used in Flask, especially in 'autocomplete.py', for suggesting code to complete the current Python code. Currently, the transformer model is performing worse then LSTM model suggesting that more work needs to be done to get good code suggestions.
 
 ## Technologies used for Web App
 <b>Frontend</b>
