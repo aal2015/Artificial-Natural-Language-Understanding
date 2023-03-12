@@ -17,7 +17,7 @@ It is important to run Flask server on port 5000 due to the proxy setting in pac
 
 ## Demo
 <b>Starting Page</b>
-![start](https://user-images.githubusercontent.com/28766535/224557978-133959d7-5c87-434e-8c6b-b4f6ce20596b.png)# 
+![start](https://user-images.githubusercontent.com/28766535/224557978-133959d7-5c87-434e-8c6b-b4f6ce20596b.png)
 <b>Suggesting Potention Code Completion after Python Code Input</b>
 ![end](https://user-images.githubusercontent.com/28766535/224557995-e5fce01d-8351-40be-94ac-2f51f2868d93.png)
 
