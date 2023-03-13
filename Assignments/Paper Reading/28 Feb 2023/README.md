@@ -1,15 +1,13 @@
-| Topic | Ensembling and Knowledge Distilling of Large Sequence Taggers for Grammatical Error Correction |
+| Topic | BERT Learns to Teach: Knowledge Distillation with Meta Learning |
 | --- | --- |
-| Aim | Carry out an investigation of improving the GEC sequence tagging architecture by (1) ensembling multiple Transformer-based encoders, and (2) encoders in large configurations (more number of layers) |
-|  | Perform knowledge distillation to train a single sequence tagger model  |
-| Motivation | Improving GEC sequence tagging architecture |
-| | Performing knowledge distillation since large models, especially due to ensembling, is expensive and convenient for deployment|
-| Model | GECToR was the chosen sequence tagging model for the experiment |
-|  | Possibly due to the model using linear layers instead of decoders for error detection and error correction. This potentially makes the model several times faster than other seq2seq models. |
-| Experiments | Use encoders, BERT, DeBERTa, RoBERTa and XLNet, in their large configuration versions |
-| | Try out two methods for ensembling models: (1) Ensembling by average of output tag probabilities, (2) Ensembling by majority votes on output edit spans |
-| | Use knowledge distillation to transfer learned knowledge/patterns from an ensemble of multiple models to a single sequence model |
-| Results | Using encoders in large configurations does improve results but the drawback is the 2.3-2.5 slower inference speed |
-| | The best ensemble model (encoders in large configuration), DeBERTa + RoBERTa + XLNet achieved an F0.5 score of 76.05 on the BEA-2019 test dataset which is the SOTA result during that time. Generally, models are pre-trained on the synthetic model. It is noted that this ensemble model achieved this score without pre-training on synthetic data |
-| | The ensemble method, majority votes on output edit spans, performed better than the method, averaging output tag probabilities |
-| | Single sequence tagging model using RoBERTa encoder in large configuration achieves a near SOTA score of 73.21 and 72.69 for which slightly different variations of training were used respectively |
+| Aim | Improve teacher model to better transfer knowledge to student model |
+| Current issues with knowledge distillation (KD) | The teacher is unaware of the student’s capacity |
+| | The teacher is not optimized for distillation |
+| Proposed Solution  | Knowledge Distillation with Meta Learning (MetaDistil) |
+| | Allows to exploit feedback from student's learning progress to improve teacher's knowledge transfer ability throughout the distillation process |
+| | Add (proposed) a 'pilot update' mechanism in the MetaDistil framework to align the learning of the bi-level learners |
+| Tasks to test MetaDistil | Text and image classification tasks |
+| Results | MetaDistil outperforms knowledge distillation by a large margin |
+| | Achieves state-of-the-art performance compressing BERT  on the GLUE benchmark |
+| | Shows competitive results compressing ResNet and VGG on CIFAR-100 |
+| | More robust than conventional KD to different student capacities  and hyperparameters |
