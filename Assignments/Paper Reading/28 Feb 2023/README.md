@@ -11,3 +11,5 @@
 | | Achieves state-of-the-art performance compressing BERT  on the GLUE benchmark |
 | | Shows competitive results compressing ResNet and VGG on CIFAR-100 |
 | | More robust than conventional KD to different student capacities  and hyperparameters |
+
+![MetaDistil Workflow](https://user-images.githubusercontent.com/28766535/224755163-bf61db48-3449-4ddf-85b9-66907e14a2fd.png)
